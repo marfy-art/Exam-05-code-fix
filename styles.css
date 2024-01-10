@@ -18,26 +18,6 @@ body{
 /* Nav bar design style */
 
 
-.line-left{
-    width: 1px;
-    height: 1418px;
-    background-color: #646464;
-    position: absolute;
-    top: 0;
-    left: 120px;
-    z-index:2000 ;
-    
-}
-
-.line-right{
-    width: 1px;
-    height: 1418px;
-    background-color: #646464;
-    position: absolute;
-    top: 0;
-    right: 120px;
-    z-index:2000 ;
-}
 
 .logo{
     color: #1C3F39;
@@ -57,6 +37,7 @@ header{
     left: 0;
     right: 0; 
     width: 100%;
+    z-index: 1000;
     border-bottom: 1px solid #646464;
 }
 
@@ -68,7 +49,6 @@ nav {
     max-width: 1200px;
     color: #212121;
     gap: 60px;
-    z-index: 1000;
     transition: all ease-in-out .60s;
     margin: auto;
 
@@ -132,6 +112,28 @@ nav ul li a:hover{
 /* welcome section design style */
 
 
+.line-left{
+    width: 1px;
+    height: 100%;
+    background-color: #646464;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index:3000 ;
+    
+}
+
+.line-right{
+    width: 1px;
+    height: 100%;
+    background-color: #646464;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    z-index:3000 ;
+}
+
+
 .home{
     display: flex;
     justify-content: center;
@@ -143,6 +145,8 @@ nav ul li a:hover{
     padding: 160px 120px 0 120px;
     transition: all ease-in-out .60s;
     align-items: center;
+    position: relative;
+    z-index: 500;
 }
 
 .main-text{
@@ -216,6 +220,7 @@ nav ul li a:hover{
     align-items: center;
     text-align: center;
     padding-bottom: 160px; /* we have to change this for exam */
+    position: relative;
 
 }
 
@@ -407,20 +412,22 @@ nav ul li a:hover{
 
      .work-line-left{
         width: 1px;
-        height: 1370px;
+        height: 100%;
         background: #646464;
         position: absolute;
-        top: 3082px;
+        top: 0;
         left: 120px;
+        z-index: 2001;
     }
 
     .work-line-right{
         width: 1px;
-        height: 1370px;
+        height: 100%;
         background: #646464;
         position: absolute;
-        top: 3082px;
+        top: 0;
         right: 120px;
+        z-index: 2001;
     } 
 
 
@@ -428,6 +435,8 @@ nav ul li a:hover{
     background: #E6E3D4;
     padding: 120px 120px;
     transition: all ease-in-out .60s;
+    position: relative;
+    z-index: -2;
     }
 
 .work-content{
@@ -777,13 +786,13 @@ color: #172926;
 
     .line-left{
         left: 60px;
-        height: 970px;
+
 
     }
 
     .line-right{
         right: 60px;
-        height: 970px;
+
     }
 
     .hero-image{
@@ -855,14 +864,13 @@ color: #172926;
 
     .work-line-left{
         left: 60px;
-        top: 3264px;
-        height: 1578px;
+
+
     }
 
     .work-line-right{
         right: 60px;
-        top: 3264px;
-        height: 1578px;
+
     }
 
     .wrok-text h2{
